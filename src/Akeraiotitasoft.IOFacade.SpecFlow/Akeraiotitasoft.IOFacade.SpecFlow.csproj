@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Akeraiotitasoft.IOFacade.Abstractions\Akeraiotitasoft.IOFacade.Abstractions.csproj" />
+    <ProjectReference Include="..\Akeraiotitasoft.IOFacade.Mock\Akeraiotitasoft.IOFacade.Mock.csproj" />
+  </ItemGroup>
+
+</Project>
