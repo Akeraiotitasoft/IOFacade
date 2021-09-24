@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Robert Kolski</Authors>
+    <Company>Akeraiotitasoft LLC</Company>
+    <Copyright>Copyright 2021 Akeraiotitasoft LLC</Copyright>
+    <PackageIcon>akeraiotitasoft.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/Akeraiotitasoft/IOFacade</RepositoryUrl>
+    <PackageTags>io, facade</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +23,17 @@
   <ItemGroup>
     <ProjectReference Include="..\Akeraiotitasoft.IOFacade.Abstractions\Akeraiotitasoft.IOFacade.Abstractions.csproj" />
     <ProjectReference Include="..\Akeraiotitasoft.IOFacade.Mock\Akeraiotitasoft.IOFacade.Mock.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\akeraiotitasoft.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

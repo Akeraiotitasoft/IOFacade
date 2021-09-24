@@ -2,10 +2,31 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Authors>Robert Kolski</Authors>
+    <Company>Akeraiotitasoft LLC</Company>
+    <Copyright>Copyright 2021 Akeraiotitasoft LLC</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>akeraiotitasoft.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/Akeraiotitasoft/IOFacade</RepositoryUrl>
+    <PackageTags>io, facade</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Akeraiotitasoft.IOFacade.Abstractions\Akeraiotitasoft.IOFacade.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\akeraiotitasoft.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

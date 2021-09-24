@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Akeraiotitasoft.SpecFlow.DependencyInjection.SpecFlowPlugin;
 using Akeraiotitasoft.IOFacade.SpecFlow.BDD.CUT;
-//using Akeraiotitasoft.DependencyInjection.Modules;
+using Akeraiotitasoft.DependencyInjection.Modules;
 
 namespace Akeraiotitasoft.IOFacade.SpecFlow.BDD.DependencyInjection
 {
@@ -18,15 +18,9 @@ namespace Akeraiotitasoft.IOFacade.SpecFlow.BDD.DependencyInjection
         {
             IServiceCollection services = new ServiceCollection();
             services.AddMockFacadeIO();
-            services.AddSingleton<ICalculator, Calculator>();
             services.AddLogging();
-            //services.LoadModule<ServiceCollectionRegistration>();
+            services.LoadModule<CalculatorModule>();
             return services;
         }
     }
-
-    //public class CalculatorModule : IServiceCollectionModule
-    //{
-
-    //}
 }
